@@ -1,5 +1,6 @@
 import { HeadingLg } from '@/components/ui/heading';
 import Link from 'next/link';
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const services = [
     {
@@ -36,7 +37,7 @@ export default function ServicesHomepage() {
                         return (
                             <li className="service-item" key={index}>
                                 <Link href={service.url} aria-label={service.name} className="service">
-                                    {service.name}
+                                    {service.name} <AiOutlineArrowRight/>
                                 </Link>
                             </li>
                         )

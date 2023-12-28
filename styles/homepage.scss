@@ -6,8 +6,9 @@
 }
 
 .hero-homepage {
-    @apply relative mt-16 px-3 pt-6 pb-14 w-full;
+    @apply relative px-3 pt-24 pb-14 w-full;
 
+    border-bottom: 3px solid rgb(255, 10, 109);
 }
 
 .hero-bg {
@@ -29,13 +30,34 @@
 
 #portal-bg {
     @apply absolute;
-    top: -63px;
+    top: -12px;
     left: -79px;
     animation: rotatePortal 24s linear infinite;
 }
 
 .hero-text {
     text-shadow: 0rem 0rem 1rem rgb(255 255 255 / 48%);
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#hero-keyword {
+    &.fade-in {
+        animation: fadeInOut 4000ms infinite;
+    }
+    &.fade-out {
+        animation: fadeOut 500ms linear forwards;
+    }
 }
 
 #cta {
@@ -56,7 +78,7 @@
     .service-item {}
 
     .service {
-        @apply py-4 px-4 block rounded-xl mb-4;
+        @apply py-4 px-4 block rounded-xl mb-4 flex flex-row justify-between text-lg;
         text-decoration: none;
         background: linear-gradient(270deg, #0c0c0c, #000000);
     }
