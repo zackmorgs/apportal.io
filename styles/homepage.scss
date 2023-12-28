@@ -22,7 +22,6 @@
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(360deg);
     }
@@ -38,7 +37,9 @@
 .hero-text {
     text-shadow: 0rem 0rem 1rem rgb(255 255 255 / 48%);
 }
-
+#hero-keyword {
+    color:yellow;
+}
 #cta {
     @apply flex flex-row justify-center;
 }
