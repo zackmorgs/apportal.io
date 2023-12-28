@@ -13,9 +13,8 @@ export default function HeroHomepage() {
                 </div>
                 <div className="hero-text">
                     <HeadingXL>
-                        Experience New Digital Horizons
+                        Your App's Digital Gateway
                     </HeadingXL>
-
                 </div>
                 <div id="cta">
                     <Link id="btn-quote" className="btn" href="/contact" aria-label="Get a Quote">

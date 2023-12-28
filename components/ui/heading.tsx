@@ -1,6 +1,7 @@
 import React, {ReactNode} from 'react';
 import { DM_Sans } from 'next/font/google'
 
+import "@/styles/headings.scss";
 
 const dmSans = DM_Sans({ 
     subsets: ['latin'],
@@ -15,13 +16,13 @@ interface HeadingProps {
 
 export function HeadingXL({ children }: HeadingProps) {
     return (
-        <h1 className={`${dmSans.className} lowercase text-6xl leading-tighter`}>{children}</h1>
+        <h1 className={`${dmSans.className} lowercase text-6xl leading-tighter heading-1`}>{children}</h1>
     )
 }
 
 export function HeadingLg({ children }: HeadingProps) {
     return (
-        <h2 className={`uppercase text-3xl mt-2 mb-3 leading-tighter`}>{children}</h2>
+        <h2 className={`uppercase text-3xl mt-2 mb-4 leading-tighter`}>{children}</h2>
     )
 }
 

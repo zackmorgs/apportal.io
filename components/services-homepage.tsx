@@ -32,9 +32,9 @@ export default function ServicesHomepage() {
                     services
                 </HeadingLg>
                 <ul className="services-list">
-                    {services.map((service)=>{
+                    {services.map((service, index)=>{
                         return (
-                            <li className="service-item">
+                            <li className="service-item" key={index}>
                                 <Link href={service.url} aria-label={service.name} className="service">
                                     {service.name}
                                 </Link>

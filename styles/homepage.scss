@@ -12,8 +12,9 @@
 
 .hero-bg {
     @apply absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none w-full h-full overflow-hidden;
-    background:linear-gradient(90deg, rgba(212,255,23,0.8), rgba(0,99,185,0.8), rgba(176, 0, 208, 0.8));
+    background:linear-gradient(121deg, hsl(219 41% 58% / 1), #000000, hsl(291 9% 62% / 1));
     z-index:-1;
+    box-shadow: inset 0rem 0rem 2rem rgb(0 0 0 / 68%);
 }
 #portal-bg {
     @apply absolute;
@@ -23,7 +24,7 @@
     // width:200%;
 }
 .hero-text {
-    // @apply z-10;
+    text-shadow: 0rem 0rem 1rem rgb(255 255 255 / 48%);
 }
 #cta {
     @apply flex flex-row justify-center;
@@ -33,6 +34,7 @@
     // border-radius:2rem;
     background:linear-gradient(90deg, rgb(145,3,223), rgb(255,10,109));
     // outline:2px solid rgba(255,255,255,0.3);
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.5);
 }
 
 #services_homepage {

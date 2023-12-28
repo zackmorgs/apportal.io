@@ -48,7 +48,7 @@ export default function Header() {
                         return (
                             <li>
                                 <Link href={item.url} aria-label={item.name} className="nav-link">
-                                    {item.name}
+                                    {item.name} 
                                 </Link>
                             </li>
                         )
