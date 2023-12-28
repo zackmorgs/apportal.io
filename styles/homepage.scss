@@ -1,6 +1,11 @@
 @tailwind utilities;
 // mobile-first
 
+.hero-loading {
+    @apply py-20;
+
+}
+
 #hero-container {
     @apply w-full;
 }

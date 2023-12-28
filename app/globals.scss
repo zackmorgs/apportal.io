@@ -14,6 +14,14 @@
 body {
   background:#111;
 }
+ 
+main {
+  @apply flex flex-col items-center justify-between;
+}
+
+.loading {
+  @apply h-screen flex justify-center align-middle;
+}
 
 .heading-homepage {
 

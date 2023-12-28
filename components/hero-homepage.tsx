@@ -6,22 +6,21 @@ import Image from 'next/image';
 
 export default function HeroHomepage() {
     return (
-        <section id="hero-container">
-            <Hero className="hero-homepage">
-                <div className="hero-bg">
-                    <Image id="portal-bg" src="/svg/portal.svg" alt="apportal.io Portal" width={375} height={375} />
-                </div>
-                <div className="hero-text">
-                    <HeadingXL>
-                        Your App's Digital Gateway
-                    </HeadingXL>
-                </div>
-                <div id="cta">
-                    <Link id="btn-quote" className="btn" href="/contact" aria-label="Get a Quote">
-                        Get a Quote
-                    </Link>
-                </div>
-            </Hero>
-        </section>
+        <Hero className="hero-homepage">
+            <div className="hero-bg">
+                <Image src="/svg/portal.svg" alt="apportal.io Portal" width={375} height={375}/>
+            </div>
+            <div className="hero-text">
+                <HeadingXL>
+                    Experience New Digital Horizons
+                </HeadingXL>
+
+            </div>
+            <div id="cta">
+                <Link id="btn-quote" className="btn" href="/contact" aria-label="Get a Quote">
+                    Get a Quote
+                </Link>
+            </div>
+        </Hero>
     )
 }

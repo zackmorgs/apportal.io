@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
 import './globals.scss'
+import Main from '@/components/ui/main';
 
 import Header from '@/components/ui/header';
 
@@ -25,9 +26,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={dmSans.className}>
         <Header/>
-        <main className="flex flex-col items-center justify-between">
+        <Main>
           {children}
-        </main>
+        </Main>
       </body>
     </html>
   )

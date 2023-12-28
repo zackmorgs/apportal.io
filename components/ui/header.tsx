@@ -23,7 +23,7 @@ export default function Header() {
     const [isOpen, setNavOpen] = useState<boolean>(false)
 
     useEffect(() => {
-
+        
     })
 
     const toggleNav = () => {
