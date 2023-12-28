@@ -37,7 +37,21 @@
 
 #services_homepage {
     @apply w-full;
+    .service-item {
+
+    }
+    .service {
+        @apply py-4 px-4 block rounded-xl mb-4;
+        text-decoration:none;
+        background:linear-gradient(270deg, #0c0c0c, #000000);
+    }
+    .services-list {
+        @apply grid grid-rows-1;
+        
+    }
 }
+
+
 @media not all and (min-width: 640px) {
 
 }

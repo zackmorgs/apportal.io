@@ -31,18 +31,17 @@ export default function ServicesHomepage() {
                 <HeadingLg>
                     services
                 </HeadingLg>
-                <ul id="services-list">
+                <ul className="services-list">
                     {services.map((service)=>{
                         return (
-                            <li>
-                                <Link href={service.url} aria-label={service.name}>
+                            <li className="service-item">
+                                <Link href={service.url} aria-label={service.name} className="service">
                                     {service.name}
                                 </Link>
                             </li>
                         )
                     })}
                 </ul>
-
             </div>
         </section>
     )
