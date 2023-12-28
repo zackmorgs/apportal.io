@@ -44,9 +44,9 @@ export default function Header() {
                     </button>
                 </div>
                 <ul id="nav_items">
-                    {menuItems.map((item) => {
+                    {menuItems.map((item, index) => {
                         return (
-                            <li>
+                            <li key={index}>
                                 <Link href={item.url} aria-label={item.name} className="nav-link">
                                     {item.name} 
                                 </Link>
