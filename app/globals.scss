@@ -16,7 +16,7 @@ body {
 }
  
 main {
-  @apply flex flex-col items-center justify-between;
+  @apply flex flex-col items-center justify-between overflow-x-hidden;
 }
 
 .loading {
