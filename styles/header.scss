@@ -2,14 +2,13 @@
 // mobile-first
 
 #nav {
-    @apply fixed w-full z-30;
+    @apply fixed w-full;
+    z-index:2
 }
 
 #navbar {
     @apply py-4 px-4 flex flex-row justify-between;
     background-color: hsla(0, 0%, 7%, 0.9);
-    z-index:1;
-
 }
 .logo {
     @apply pr-2 text-2xl flex flex-row justify-between;
@@ -83,8 +82,9 @@
     background-color: hsla(0, 0%, 7%, 90%);
     transform: translateY(-100%);
     transition:transform .15s ease, opacity .15s ease;
-    z-index:-1;
+    z-index: 3;
     opacity:0.0;
+    height:0px;
 }
 
 .open {
@@ -93,6 +93,7 @@
         box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.5);
         transform: translateY(0%);
         opacity:1.0;
+        height:initial;
     }
 }
 
