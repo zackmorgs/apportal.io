@@ -1,6 +1,6 @@
 import { HeadingLg } from '@/components/ui/heading';
 import Link from 'next/link';
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowRight, AiOutlineDown } from "react-icons/ai";
 
 const services = [
     {
@@ -30,14 +30,16 @@ export default function ServicesHomepage() {
         <section id="services_homepage" className="mt-8">
             <div className="max-w-6xl mx-auto py-4 px-4">
                 <HeadingLg>
-                    services
+                    <div className="flex flex-row justify-between align-center">
+                        <span>services</span> <AiOutlineDown />
+                    </div>
                 </HeadingLg>
                 <ul className="services-list">
-                    {services.map((service, index)=>{
+                    {services.map((service, index) => {
                         return (
                             <li className="service-item" key={index}>
                                 <Link href={service.url} aria-label={service.name} className="service">
-                                    {service.name} <AiOutlineArrowRight/>
+                                    {service.name} <AiOutlineArrowRight />
                                 </Link>
                             </li>
                         )

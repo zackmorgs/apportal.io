@@ -8,6 +8,9 @@ import { HeadingXL } from '@/components/ui/heading'
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { AiOutlineInfoCircle } from "react-icons/ai";
+
+
 type FadeProp = { fade: 'fade-in' | 'fade-out' }
 
 export default function HeroHomepage(): React.JSX.Element {
@@ -43,7 +46,7 @@ export default function HeroHomepage(): React.JSX.Element {
             </div>
             <div id="cta">
                 <Link id="btn-quote" className="btn" href="/contact" aria-label="Get a Quote">
-                    Get a Quote
+                    <AiOutlineInfoCircle className="icon" />Get a Quote
                 </Link>
             </div>
         </Hero>

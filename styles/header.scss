@@ -11,9 +11,20 @@
     z-index:1;
 
 }
-#logo {
-    @apply pr-2 text-2xl;
+.logo {
+    @apply pr-2 text-2xl flex flex-row justify-between;
 }
+
+.sld {
+    // color: #f64f64;
+    // background: linear-gradient(#eee, #f64f64);
+    // background-clip:text;
+}
+.dot {
+    color: #ffffff;
+}
+.tld {
+    color: #ffffff;}
 #hamburger {
     @apply w-10 h-10 cursor-pointer flex flex-col justify-center rounded-lg relative appearance-none;
     color: currentColor;

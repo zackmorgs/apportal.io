@@ -22,7 +22,7 @@ export function HeadingXL({ children }: HeadingProps) {
 
 export function HeadingLg({ children }: HeadingProps) {
     return (
-        <h2 className={`uppercase text-3xl mt-2 mb-4 leading-tighter`}>{children}</h2>
+        <h2 className={`heading-2 uppercase text-3xl mt-2 mb-4 leading-tighter`}>{children}</h2>
     )
 }
 

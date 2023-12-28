@@ -3,6 +3,7 @@ import "@/styles/header.scss";
 import { useState, useEffect } from 'react'
 
 import Link from "next/link";
+import Logo from "./logo";
 
 const menuItems = [
     {
@@ -34,8 +35,8 @@ export default function Header() {
         <header id="nav" className={isOpen ? "open" : ""}>
             <div id="nav_container">
                 <div id="navbar">
-                    <Link id="logo" href="/" aria-label="Home">
-                        apportal.io
+                    <Link href="/" aria-label="Home">
+                        <Logo/>
                     </Link>
                     <button id="hamburger" onClick={toggleNav} aria-label="Toggle Navigation" type="button">
                         <span className="bar"></span>

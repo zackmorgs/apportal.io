@@ -39,37 +39,21 @@
     text-shadow: 0rem 0rem 1rem rgb(255 255 255 / 48%);
 }
 
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-#hero-keyword {
-    &.fade-in {
-        animation: fadeInOut 4000ms infinite;
-    }
-    &.fade-out {
-        animation: fadeOut 500ms linear forwards;
-    }
-}
-
 #cta {
     @apply flex flex-row justify-center;
 }
 
 #btn-quote {
-    @apply py-4 px-10 rounded-3xl inline-block mt-6 text-center text-lg absolute;
+    @apply w-2/3 py-4 px-10 rounded-3xl block mt-6 text-center text-lg absolute flex flex-row justify-center align-middle;
     // border-radius:2rem;
     background: linear-gradient(90deg, rgb(145, 3, 223), rgb(255, 10, 109));
     // outline:2px solid rgba(255,255,255,0.3);
     box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+    .icon {
+        @apply relative mr-2;
+        top:4px;
+        font-size:inherit;
+    }
 }
 
 #services_homepage {
