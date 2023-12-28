@@ -8,7 +8,7 @@ export default function HeroHomepage() {
     return (
         <Hero className="hero-homepage">
             <div className="hero-bg">
-                <Image src="/svg/portal.svg" alt="apportal.io Portal" width={375} height={375}/>
+                <Image id="portal-bg" src="/svg/portal.svg" alt="apportal.io Portal" width={375} height={375}/>
             </div>
             <div className="hero-text">
                 <HeadingXL>

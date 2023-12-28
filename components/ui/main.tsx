@@ -1,6 +1,6 @@
 "use client";
 
-import {useEffect, useState} from 'react';
+import {useEffect, useState, ReactNode} from 'react';
 
 interface MainProps {
     // title: string;
@@ -11,7 +11,7 @@ interface MainProps {
 }
 
 
-export default function Main({ title, children, className, ...rest }: HeroProps) {
+export default function Main({ title, children, className, ...rest }: MainProps) {
     const [loading, setLoading] = useState(true);
     const [loadPercentage, setLoadPercentage] = useState(0);
 
