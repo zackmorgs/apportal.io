@@ -17,9 +17,10 @@
 }
 
 #btn-quote {
-    @apply py-4 px-4 rounded-3xl mx-auto inline-block mt-4 text-center;
+    @apply py-4 px-10 rounded-3xl inline-block mt-6 text-center left-1/2 -translate-x-1/2 text-lg;
     // border-radius:2rem;
-    background:black
+    background:linear-gradient(90deg, rgb(145,3,223), rgb(255,10,109));
+    // outline:2px solid rgba(255,255,255,0.3);
 }
 
 @media not all and (min-width: 640px) {
